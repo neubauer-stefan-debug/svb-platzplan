@@ -1,8 +1,8 @@
-# SVB Platzplan v7
+# SVB Platzplan v8
 
 Mobile PWA für die Platz- und Terminplanung der Fußballabteilung des SV Buckenhofen.
 
-## Neu in v7 – BFV-Vereinsspielplan als PDF
+## Neu in v8 – BFV-Vereinsspielplan als PDF
 - Im Adminbereich kann die offizielle **BFV-Vereinsspielplan-PDF** für den gesamten SV Buckenhofen hochgeladen werden.
 - Die App liest die PDF direkt im Browser mit PDF.js aus; die Datei wird nicht an einen zusätzlichen Server geschickt.
 - Es werden automatisch **nur erkannte Heimspiele des SV Buckenhofen** in eine Prüfliste übernommen.
@@ -16,7 +16,7 @@ Mobile PWA für die Platz- und Terminplanung der Fußballabteilung des SV Bucken
 - Duplikate aus wiederholten BFV-Imports werden anhand Quelle/Datum/Anstoß/Mannschaft/Gegner übersprungen.
 - Bei BFV-Spielstätte Platz 1/2 kann optional automatisch A/B vorgeschlagen werden; ansonsten gilt der gewählte Standardplatz.
 
-## Aus v6 weiterhin enthalten
+## Aus v8 weiterhin enthalten
 - Trainer-Auswahl + 4-stellige PIN ohne Google/E-Mail.
 - Rollen Trainer / Vollzugriff / Admin.
 - A1/A2, B1/B2, C-Platz; Spiele reservieren A oder B komplett.
@@ -28,4 +28,11 @@ Mobile PWA für die Platz- und Terminplanung der Fußballabteilung des SV Bucken
 Alle Dateien aus diesem Ordner über die bestehenden Dateien im Repository `svb-platzplan` hochladen und committen. GitHub Pages aktualisiert automatisch.
 
 ## Hinweis zum BFV-PDF-Parser
-BFV kann das Layout seiner PDF-Exporte ändern. Deshalb zeigt v7 vor dem Import immer eine Prüfliste. Wenn eine konkrete BFV-PDF einmal nicht sauber erkannt wird, kann der Parser anhand genau dieser Datei nachgeschärft werden.
+BFV kann das Layout seiner PDF-Exporte ändern. Deshalb zeigt v8 vor dem Import immer eine Prüfliste. Wenn eine konkrete BFV-PDF einmal nicht sauber erkannt wird, kann der Parser anhand genau dieser Datei nachgeschärft werden.
+
+
+## Neu in v8
+- Zentraler Erstzugang **Admin** mit Vollzugriff; weitere Trainer später zuordnen.
+- Mannschaften, Kurzbezeichnungen und Farben zentral im Adminbereich pflegen.
+- Direkter BFV-PDF-Import deaktiviert; stattdessen geprüfte BFV-Heimspiel-CSV.
+- CSV-Import unterstützt Anstoß, Spielende, 30-Minuten-Puffer, Heim/Gast-Kabinen, Quelle und Duplikatprüfung.
