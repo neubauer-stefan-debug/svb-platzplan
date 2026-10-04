@@ -1,32 +1,20 @@
-# SVB Platzplan v3 – Staustufenkicker
+# SVB Platzplan v4
 
-Mobile PWA für die Platzbelegung und Terminplanung der Fußballabteilung des SV Buckenhofen.
+Mobile PWA für die Platz- und Terminplanung der Fußballabteilung des SV Buckenhofen.
 
-## Gestaltung
-- SVB Rot / Weiß / Schwarz
-- offizielles Vereinswappen aus der BFV-Medienquelle in der App
-- Staustufenkicker-Branding und Vereinsmotto „Sportlich · Vielseitig · Bewährt seit 1946“
-- klare Mannschaftsfarben bei einheitlichem SVB-Rahmendesign
+## Neu in v4
+- Mo–Fr im Plan 14:00–22:00 Uhr, Sa/So 09:00–22:00 Uhr
+- Pflichtfeld „Trainer / verantwortlich“, Bearbeiter bleibt separat im Änderungsprotokoll
+- Terminbezeichnung optional; wird automatisch aus Mannschaft + Terminart erzeugt
+- Trainerzuordnung pro Mannschaft im Adminbereich, D-Jugend vorbelegt mit Stefan, Holger, Bülent
+- Adminbereich für BFV/ICS-Import, CSV-Import und CSV-Export
+- Serientermine mit Saison-Presets Herbst/Winter/Sommer; einzelne Termine und Serie ab einem Termin löschbar
+- Bayerische Schulferien 2026/27 und gesetzliche Feiertage als reine Planungsinfo
+- zusätzliche grafische Wochenansicht mit horizontal scrollbareren Tageskarten
+- Monatsansicht bleibt erhalten
 
-## Funktionen
-- Wochenplan im 30-Minuten-Raster
-- A1/A2 und B1/B2; Spiele/Turniere belegen A oder B komplett
-- Herren I, Herren II, AH, U19/A bis U9/F, Bambini/U7, Fußballschule, Verein
-- Training, Fußballschule, Liga, Pokal, Freundschaft, Turnier/Kinderfestival, Rasenpflege, Platzsperre, Vereins-/Sondertermin
-- Heim/Auswärts, Gegner, Kabinen, Status, Notizen, Bearbeiter und Änderungsgrund
-- Serientermine
-- Konfliktprüfung
-- Monatsübersicht
-- Übersicht für Heimspiele, Änderungen, Sperren und Vereinsinfos
-- Schnellverschiebung um ±30 Minuten, ±1 Tag und A↔B
-- BFV/iCal/ICS-Import
-- CSV-Export
-- Live-Synchronisierung über Firebase Firestore
+## Ferienquelle
+Bayerisches Staatsministerium für Unterricht und Kultus – Schulferien 2026/2027.
 
-## GitHub Pages
-Alle Dateien direkt in das Repository `svb-platzplan` hochladen. Danach unter Settings → Pages `Deploy from a branch`, Branch `main`, Ordner `/ (root)` auswählen.
-
-## Firebase
-Verwendet das bestehende Projekt `trainingsplatz-sv-buckenhofen`, Firebase Anonymous Authentication und die Collection `events`.
-
-Hinweis: Die aktuelle anonyme Anmeldung ist bewusst eine einfache Pilotlösung. Vor einem breiten öffentlichen Rollout sollte eine echte Trainer-/Admin-Anmeldung ergänzt werden.
+## Hinweis zu Berechtigungen
+Der Adminbereich wird aktuell anhand des lokal hinterlegten Namens ein-/ausgeblendet. Das ist bewusst eine einfache Vereinslösung und noch keine sicherheitstechnisch harte Rollensteuerung. Für den breiten Rollout sollte optional eine Admin-PIN oder echte Authentifizierung ergänzt werden.
