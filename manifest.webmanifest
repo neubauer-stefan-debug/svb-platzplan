@@ -1,0 +1,28 @@
+{
+  "name": "SVB Platzplan – Staustufenkicker",
+  "short_name": "SVB Platzplan",
+  "description": "Platzbelegung, Training, Heimspiele, Sperren und Vereinstermine der Fußballabteilung des SV Buckenhofen.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f2f0",
+  "theme_color": "#d20a11",
+  "icons": [
+    {
+      "src": "https://app.bfv.de/export.media/-/action/getLogo/format/7/id/00ES8GNKR800000NVV0AG08LVUPGND5I/verband/00ES8GNCQK000000VV0AG08LVUPGND5I/strat_code/bfv",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
